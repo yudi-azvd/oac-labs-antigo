@@ -24,27 +24,26 @@ print('linear model:', model.intercept_, model.coef_)
 ##################
 # https://lmfit.github.io/lmfit-py/model.html
 # https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html
-def exp(x, a, b, c):
-    return a * np.exp(-b*x) + c
+def quadratic(x, a, b):
+    return a * x**2 + b
 
 y = [878, 3486, 7941, 14162, 22201, 31978, 43426, 56873, 72029, 89073]
 y = np.array([i*1.0 for i in y])
 x = np.linspace(10, 100, 10)
 
-exp_curve, = plt.plot(x, y, 'ro', label='$t_i$')
-exp_curve_legend = plt.legend(handles=[exp_curve], loc='upper left')
-# plt.plot(x, y, 'r', label='array ordenado inversamente') # array ordenado inversamente
+quadratic_curve, = plt.plot(x, y, 'ro', label='$t_i$')
+quadratic_curve_legend = plt.legend(handles=[quadratic_curve], loc='upper left')
 
-best_vals, pcov = curve_fit(exp, x, y)
-plt.plot(x, exp(x, *best_vals), 'r--')
-# 1.9e+04*exp(x*-1.8*10^-02) - 2.32438249e+04
+best_vals, pcov = curve_fit(quadratic, x, y)
+plt.plot(x, quadratic(x, *best_vals), 'r--')
+# 8.9*x^2 - 79.9
 
-print('exponencial', best_vals)
+print('parabola', best_vals)
 
 # fig, ax = plt.subplots()
 
 plt.xlabel('n (tamanho do vetor)')
-plt.legend(handles=[linear_curve, exp_curve], loc='upper left')
+plt.legend(handles=[linear_curve, quadratic_curve], loc='upper left')
 plt.ylabel('I (número de instruções executadas)')
 plt.title('$t_i$, $t_0$ x n')
 plt.show()
