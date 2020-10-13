@@ -1,61 +1,31 @@
 #include <stdio.h>
-#include <math.h>
 
-int fatorial(int n)
+float exps(float a, int t)
 {
-    int total = 1;
-    int i = 0;
-    for (i = n; n > 1; n--)
-    {
-        total = total * (n);
-    }
-    return total;
+    float r = 1;
+    for (; t > 0; t--)
+        r *= (float)a / t;
+    return r;
 }
 
-float mypow(float x, int y)
+float seno(float r)
 {
-    float temp;
-    if (y == 0)
-        return 1;
-    temp = powf(x, y / 2);
-    if (y % 2 == 0)
-        return temp * temp;
-    else
-    {
-        if (y > 0)
-            return x * temp * temp;
-        else
-            return (temp * temp) / x;
-    }
+    int n = 0;
+    int neg = -1;
+    float result = 0;
+    for (; n <= 10; n++)
+        result += (n % 2 == 0 ? 1 : -1) * (exps(r, 2 * n + 1));
+    return result;
 }
 
-float calculaCos(float x)
+float coseno(float r)
 {
-    int const1 = -1;
-    float soma = 0;
-
-    for (int i = 0; i < 10; i++)
-    {
-        soma += ((powf(const1, i)) / fatorial(2 * i)) * powf(x, 2 * i);
-    }
-
-    return soma;
-}
-
-float calculaSin(float x)
-{
-    float sum, t;
-    x = x * 3.14159 / 180;
-    t = x;
-    sum = x;
-    for (int i = 1; i < 20 + 1; i++)
-    {
-        t = (t * mypow((double)(-1), (double)(2 * i - 1)) *
-             x * x) /
-            (2 * i * (2 * i + 1));
-        sum = sum + t;
-    }
-    return sum;
+    int n = 0;
+    int neg = -1;
+    float result = 0;
+    for (; n <= 10; n++)
+        result += (n % 2 == 0 ? 1 : -1) * (exps(r, 2 * n));
+    return result;
 }
 
 float rad(float graus)
@@ -67,25 +37,16 @@ void calculapontos(int r, int a, int p)
 {
     for (int i = 0; i < p; i++)
     {
-        float x = r * calculaCos(rad(a));
-        float y = r * calculaSin(rad(a));
-        //printf("x%d: %f y%d: %f\n", i + 1, x, i + 1, y);
-        printf("x%d: %f\n", i + 1, x);
-        //printf("sen %f = %f\n", rad(a), calculaSin(rad(a)));
+        float x = r * coseno(rad(a));
+        float y = r * seno(rad(a));
         a = (a + (360 / p)) % 360;
     }
 }
 
 int main()
 {
-
-    //float cos = 0.69593;
-    //float sin = 0.69593;
-    //printf("%.8f\n", calculaCosBhaskara(cos));
-    //printf("%.8f\n", calculaSinBhaskara(sin));
-    int r = 110;
-    float a = 45;
-    int p = 6;
-
+    int r = 100;
+    float a = 90;
+    int p = 3;
     calculapontos(r, a, p);
 }
