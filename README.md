@@ -1,3 +1,3 @@
-# Laboratórios de laboratório Organização e Arquitetura de Computadores
+# Laboratórios de Organização e Arquitetura de Computadores
 
 Bora ver o que dá.
