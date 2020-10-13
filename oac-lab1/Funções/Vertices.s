@@ -24,7 +24,7 @@ main:
         lui     a5,%hi(.LC4)
         flw     fa5,%lo(.LC4)(a5)
         fsw     fa5,-24(s0)
-        li      a5,3
+        li      a5,7 # AQUI A GENTE DEFINE O P
         sw      a5,-28(s0)
         flw     fa5,-24(s0)
         fcvt.w.s a5,fa5,rtz
@@ -120,7 +120,7 @@ vertices:
         slli    a5,a5,2
         addi    a4,s0,-32
         add     a5,a4,a5
-        fsw     fa5,-32(a5)
+        #fsw     fa5,-32(a5)
         li      a4,360
         lw      a5,-76(s0)
         div     a4,a4,a5
@@ -168,6 +168,7 @@ loop:
     addi sp, sp, 4    # desempilhar 1 word da pilha 
     ret
 
+.include "SYSTEMv21.s"
 .include "sencos.s"
 .include "desenha.s"
-.include "SYSTEMv21.s"
+
