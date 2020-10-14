@@ -113,10 +113,12 @@ main:
         lw      a2,-28(s0)
         mv      a1,a5
         lw      a0,-20(s0)
-        csrr s8,3073
+        csrr s10,3073
         call    vertices
-        csrr s9,3073
-        sub s9, s9, s8
+        csrr s11,3073
+        sub s11, s11, s10
+        printint(s11)
+        printchar(10)
         li      a5,0
         mv      a0,a5
         lw      ra,28(sp)
@@ -128,15 +130,13 @@ main:
         mv s5, a0
         mv s6, a1
         #call show
-        printint(s9)
-        printchar(10)
         mv a0, s5
         mv a1, s6
-        csrr s8,3073
+        csrr s10,3073
         call desenha
-        csrr s9,3073
-        sub s9, s9, s8
-        printint(s9)
+        csrr s11,3073
+        sub s11, s11, s10
+        printint(s11)
         printchar(10)
         lw ra,28(sp)
        	addi    sp,sp,32
