@@ -19,6 +19,7 @@ def get_file_content(filename):
     file.close()
     return content
 
+
 def parse_content(content):
     # data = { 'points': [], 'fixed_variable': '' }   # fixed_variable eh 'r', 'a' ou 'p'
     data = { 'r': [], 'a': [], 'p': [], 't_exec': [], 'fixed_variable': '' }
@@ -35,7 +36,8 @@ def parse_content(content):
         data['t_exec'].append(t_exec)
     return data
 
-def plot_data_i(data):
+
+def save_data_i(data, filename):
     # r = data['r'] # fixo = 100
     fig = plt.figure()
     ax = plt.axes(projection="3d")
@@ -45,16 +47,22 @@ def plot_data_i(data):
     t_exec = data['t_exec']
 
     # x, y, z
-    ax.plot3D(a, p, t_exec, 'red', label='r = 100 (fixo)')
+    ax.scatter3D(a, p, t_exec, 'red', label='r = 100 (fixo)', c='r')
     ax.set_xlabel('Ângulo (°)')
     ax.set_ylabel('P (lados)')
     ax.set_zlabel('Tempo de execução (s)')
     ax.legend()
-    plt.title('$t_{exec}}$ x $a$,$p$')
-    plt.show()
+    plt.title('i) $t_{exec}}$ x $a$,$p$')
+    
+    working_dir = os.getcwd()
+    filename = filename.replace('.txt', '') + '.png'
+    full_path_filename = os.path.join(working_dir, 'oac-lab1', 'Scripts', filename)
+
+    fig.savefig(full_path_filename, bbox_inches='tight', pad_inches=0)
     return
 
-def plot_data_ii(data):
+
+def save_data_ii(data, filename):
     # a = data['a']
     fig = plt.figure()
     ax = plt.axes(projection="3d")
@@ -64,16 +72,22 @@ def plot_data_ii(data):
     t_exec = data['t_exec']
 
     # x, y, z
-    ax.plot3D(r, p, t_exec, 'blue', label='a = 90° (fixo)')
+    ax.scatter3D(r, p, t_exec, 'blue', label='a = 90° (fixo)', c='g')
     ax.set_xlabel('Raio')
     ax.set_ylabel('P (lados)')
     ax.set_zlabel('Tempo de execução (s)')
-    plt.title('$t_{exec}}$ x $r$,$p$')
+    plt.title('ii) $t_{exec}}$ x $r$,$p$')
     plt.legend()
-    plt.show()
+    
+    working_dir = os.getcwd()
+    filename = filename.replace('.txt', '') + '.png'
+    full_path_filename = os.path.join(working_dir, 'oac-lab1', 'Scripts', filename)
+
+    fig.savefig(full_path_filename, bbox_inches='tight', pad_inches=0)
     return
 
-def plot_data_iii(data):
+
+def save_data_iii(data, filename):
     # p = data['p'] # fixo: 5
     fig = plt.figure()
     ax = plt.axes(projection="3d")
@@ -83,37 +97,39 @@ def plot_data_iii(data):
     t_exec = data['t_exec']
 
     # x, y, z
-    ax.plot3D(r, a, t_exec, 'green', label='p = 5 (fixo)')
+    ax.scatter3D(r, a, t_exec, 'green', label='p = 5 (fixo)', c='b')
     ax.set_xlabel('Raio')
     ax.set_ylabel('Ângulo (°)')
     ax.set_zlabel('Tempo de execução (s)')
-    plt.title('$t_{exec}}$ x $r$,$a$')
+    plt.title('iii) $t_{exec}}$ x $r$,$a$')
     plt.legend()
-    plt.show()
+    
+    working_dir = os.getcwd()
+    filename = filename.replace('.txt', '') + '.png'
+    full_path_filename = os.path.join(working_dir, 'oac-lab1', 'Scripts', filename)
+
+    fig.savefig(full_path_filename, bbox_inches='tight', pad_inches=0)
     return
 
-def plot(filename):
-    map_filename_to_plotter = {
-        '3-5-i.txt': plot_data_i,
-        '3-5-ii.txt': plot_data_ii,
-        '3-5-iii.txt': plot_data_iii,
-    }
 
+def save_data_to_img(filename, map_filename_to_saver):
     content = get_file_content(filename)
     data = parse_content(content)
-    plotter = map_filename_to_plotter[filename]
-    plotter(data)
+    saver = map_filename_to_saver[filename]
+    saver(data, filename)
     return 
 
-def main():
-    filenames = [
-        '3-5-i.txt',
-        '3-5-ii.txt',
-        '3-5-iii.txt',
-    ]
 
-    # plot('3-5-i.txt')
-    plot('3-5-ii.txt')
+def main():
+    map_filename_to_saver = {
+        '3-5-i-enzo.txt': save_data_i,
+        '3-5-ii-enzo.txt': save_data_ii,
+        '3-5-iii-enzo.txt': save_data_iii,
+    }
+
+    save_data_to_img('3-5-i-enzo.txt', map_filename_to_saver)
+    save_data_to_img('3-5-ii-enzo.txt', map_filename_to_saver)
+    save_data_to_img('3-5-iii-enzo.txt', map_filename_to_saver)
     return
 
 if __name__ == "__main__":
