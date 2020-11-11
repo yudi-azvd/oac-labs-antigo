@@ -1,0 +1,12 @@
+module ULA(
+	input iA, iB, iOpe,
+	output oRes
+);
+
+
+always @(*)
+begin
+end
+
+
+endmodule
