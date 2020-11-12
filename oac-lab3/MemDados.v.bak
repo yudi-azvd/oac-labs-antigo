@@ -1,0 +1,28 @@
+module MemDados(
+	input wire iCLK,
+	input [31:0] iEnd, iDadoEscrita,
+	input wire iEscMem, iLeMem,
+	output [31:0] oDado
+);
+
+reg [31:0] BancoMem[0:255];
+
+reg [8:0] i;	// mudar de acordo com o tamanho do banco !!!
+
+initial 
+begin
+	for(i = 0; i <= 255; i = i + 1'b1)
+		BancoMem[i] = 32'b0;
+end
+
+if(iLeMem)
+	oDado = BancoMem[iEnd];
+
+
+always @(posedge iCLK)
+begin
+	if(iEscMem)
+		BancoMem[iEnd] = iDadoEscrita;
+end
+
+endmodule 

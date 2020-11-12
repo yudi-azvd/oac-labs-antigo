@@ -1,0 +1,85 @@
+`define OPCODER 0110011
+`define OPCODEJAL 1101111
+`define OPCODESW  0100011
+`define OPCODELW  0000011
+`define OPCODEBEQ 1100011
+`
+
+module Controlador(
+	input [6:0] iInst,
+	output oBranch, oLeMem, oEscMem, oMemPraReg, oULASrc, oEscReg,
+	output [3:0] oULAOp
+);
+
+always @(*)
+begin
+	case(iInst)
+	
+	OPCODER : 
+	begin
+		oBranch <= 1'b0;
+		oLeMem <= 1'b0;
+		oEscMem <= 1'b0;
+		oMemPraReg <= 1'b0;
+		oULAOp <= 4'b0010;
+		oULASrc <= 1'b0;
+		oEscReg <= 1'b1;
+	end
+
+	OPCODEJAL :
+	begin
+		oBranch <= 1'b1;
+		oLeMem <= 1'b0;
+		oEscMem <= 1'b0;
+		oMemPraReg <= 1'b0;
+		oULAOp <= 4'b0010; // nao sei
+		oULASrc <= 1'b1;
+		oEscReg <= 1'b1;
+	end
+	
+	OPCODESW  :
+	begin
+		oBranch <= 1'b0;
+		oLeMem <= 1'b0;
+		oEscMem <= 1'b0;
+		oMemPraReg <= 1'b0;
+		oULAOp <= 4'b0010; // nao sei
+		oULASrc <= 1'b1;
+		oEscReg <= 1'b0;
+	end
+	
+	OPCODELW  :
+	begin
+		oBranch <= 1'b0;
+		oLeMem <= 1'b1;
+		oEscMem <= 1'b0;
+		oMemPraReg <= 1'b1; 
+		oULAOp <= 4'b0010; // nao sei
+		oULASrc <= 1'b1;
+		oEscReg <= 1'b1;
+	end
+	
+	OPCODEBEQ :
+	begin
+		oBranch <= 1'b1;
+		oLeMem <= 1'b0;
+		oEscMem <= 1'b0;
+		oMemPraReg <= 1'b0;
+		oULAOp <= 4'b0001;
+		oULASrc <= 1'b0;
+		oEscReg <= 1'b0;
+	end
+	
+	default:
+	begin
+		oBranch <= 1'b0;
+		oLeMem <= 1'b0;
+		oEscMem <= 1'b0;
+		oMemPraReg <= 1'b0;
+		oULAOp <= 4'b0;
+		oULASrc <= 1'b0;
+		oEscReg <= 1'b0;
+	end
+end
+
+endmodule 
