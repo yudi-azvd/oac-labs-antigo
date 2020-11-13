@@ -1,7 +1,6 @@
 module GerImm(
 	input [31:0]iInst,
-	output logic [31:0]oSaida,
-	output logic [6:0]oDebug
+	output logic [31:0]oSaida
 );
 
 wire [6:0]OPCODE;
@@ -9,7 +8,6 @@ wire [2:0]FUNCT3;
 
 assign OPCODE = iInst[6:0];
 assign FUNCT3 = iInst[14:12];
-assign oDebug = iInst[6:0];
 
 always @(*)
 begin

@@ -1,7 +1,7 @@
 module Controlador(
 	input [6:0] iInst,
 	output oBranch, oLeMem, oEscMem, oMemPraReg, oULASrc, oEscReg, oJump,
-	output [3:0] oULAOp
+	output [1:0] oULAOp
 );
 
 always @(*)
@@ -14,7 +14,7 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b0;
-		oULAOp <= 4'b0010;
+		oULAOp <= 2'b10;
 		oULASrc <= 1'b0;
 		oEscReg <= 1'b1;
 		oJump <= 1'b0;
@@ -26,7 +26,7 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b0;
-		oULAOp <= 4'b0011; // nao sei
+		oULAOp <= 2'b11; // nao sei
 		oULASrc <= 1'b1;
 		oEscReg <= 1'b1;
 		oJump <= 1'b1;
@@ -38,7 +38,7 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b1;
 		oMemPraReg <= 1'bx;
-		oULAOp <= 4'b0000; // nao sei
+		oULAOp <= 2'b00; // nao sei
 		oULASrc <= 1'b1;
 		oEscReg <= 1'b0;
 		oJump <= 1'b0;
@@ -50,7 +50,7 @@ begin
 		oLeMem <= 1'b1;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b1; 
-		oULAOp <= 4'b0000; // nao sei
+		oULAOp <= 2'b00; // nao sei
 		oULASrc <= 1'b1;
 		oEscReg <= 1'b1;
 		oJump <= 1'b0;
@@ -62,7 +62,7 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'bx;
-		oULAOp <= 4'b0001;
+		oULAOp <= 2'b01;
 		oULASrc <= 1'b0;
 		oEscReg <= 1'b0;
 		oJump <= 1'b0;
@@ -74,7 +74,7 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b0;
-		oULAOp <= 4'b0;
+		oULAOp <= 2'b0;
 		oULASrc <= 1'b0;
 		oEscReg <= 1'b0;
 		oJump <= 1'b0;
