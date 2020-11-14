@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dX:/GitRepositories/oac-labs/oac-lab2/Decoder7/simulation/qsim
+vdecoder7
+!s110 1603127553
+!i10b 1
+!s100 oE6OVZinR23oRd_oHBc8g0
+ITj[_K<T>OVV8lH>LhA;eR2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1603127550
+8TopDE.vo
+FTopDE.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1603127553.000000
+!s107 TopDE.vo|
+!s90 -work|work|TopDE.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vdecoder7_vlg_vec_tst
+!s110 1603127554
+!i10b 1
+!s100 _1kJI4ALnPB_dI=Ua>TBi0
+Igd>l?Wfi?DhkWPh_GgD_h3
+R1
+R0
+w1603127546
+8decoder7.vwf.vt
+Fdecoder7.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 decoder7.vwf.vt|
+!s90 -work|work|decoder7.vwf.vt|
+!i113 1
+R4
+R5

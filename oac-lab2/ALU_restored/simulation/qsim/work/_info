@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dX:/GitRepositories/oac-labs/oac-lab2/ALU_restored/simulation/qsim
+vALU
+Z1 !s110 1604458514
+!i10b 1
+!s100 0:i<2e1Jm?g[f>W_]=gH80
+Io[ZQ6NOWLbEiMhfeDX9[e3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604458510
+Z3 8ALU.vo
+Z4 FALU.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1604458514.000000
+Z8 !s107 ALU.vo|
+Z9 !s90 -work|work|ALU.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@a@l@u
+vALU_vlg_vec_tst
+R1
+!i10b 1
+!s100 ;S=ZEi:bUg;V[ELRLIcm@1
+IXR:9WTcR7FD=ZaH>z_Ve^1
+R2
+R0
+w1604458507
+8ALU.vwf.vt
+FALU.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 ALU.vwf.vt|
+!s90 -work|work|ALU.vwf.vt|
+!i113 1
+R10
+R11
+n@a@l@u_vlg_vec_tst
+vRegisters
+Z13 !s110 1605060035
+!i10b 1
+!s100 le=DYB?LHV]^Hm37>lNJA1
+IfDBnZJMkJi`b]a@R>Dg^W3
+R2
+R0
+w1605060033
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1605060034.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@registers
+vRegisters_vlg_vec_tst
+R13
+!i10b 1
+!s100 n[d<Dfe9lA13GWX;Zg[Io1
+IIn1:G1DE:VOmTbDL4LEKF3
+R2
+R0
+w1605060029
+8testeReg.vwf.vt
+FtesteReg.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1605060035.000000
+!s107 testeReg.vwf.vt|
+!s90 -work|work|testeReg.vwf.vt|
+!i113 1
+R10
+R11
+n@registers_vlg_vec_tst

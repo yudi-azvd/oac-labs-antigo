@@ -1,0 +1,84 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dX:/GitRepositories/oac-labs/oac-lab2/FPALU_restored/simulation/qsim
+Efpalu
+Z1 w1603132874
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R0
+Z11 8FPALU.vho
+Z12 FFPALU.vho
+l0
+L38
+VV<ebQi17<UBzDX94hhFHW1
+!s100 f^F^>?0Qcg`n_S6lAFIMh0
+Z13 OV;C;10.5b;63
+32
+!s110 1603132876
+!i10b 1
+Z14 !s108 1603132876.000000
+Z15 !s90 -work|work|FPALU.vho|
+Z16 !s107 FPALU.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 5 fpalu 0 22 V<ebQi17<UBzDX94hhFHW1
+l6898
+L157
+VVmF2G?HMFkPO4G@WTNYN13
+!s100 `bEb1l^oeL>T_VQ_eRoeZ0
+R13
+32
+!s110 1603132877
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Efpalu_vhd_vec_tst
+w1603132866
+R8
+R9
+R0
+8FPALU.vwf.vht
+FFPALU.vwf.vht
+l0
+L31
+VaMm0Qjm_We9eVCGfiQ`fi0
+!s100 Y^HlUOSXRi7;dIhoEf:SG2
+R13
+32
+!s110 1603132878
+!i10b 1
+!s108 1603132878.000000
+!s90 -work|work|FPALU.vwf.vht|
+!s107 FPALU.vwf.vht|
+!i113 1
+R17
+R18

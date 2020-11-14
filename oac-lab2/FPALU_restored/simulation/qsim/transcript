@@ -1,0 +1,83 @@
+# do FPALU.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:16 on Oct 19,2020
+# vcom -work work FPALU.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity FPALU
+# -- Compiling architecture structure of FPALU
+# End time: 15:41:18 on Oct 19,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:18 on Oct 19,2020
+# vcom -work work FPALU.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FPALU_vhd_vec_tst
+# -- Compiling architecture FPALU_arch of FPALU_vhd_vec_tst
+# ** Error: FPALU.vwf.vht(512): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(512): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(514): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(514): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(516): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(516): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(518): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(518): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(520): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(520): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(522): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(522): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(524): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(524): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(526): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(526): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(528): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(528): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(530): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(530): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(532): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(532): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(534): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(534): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(536): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(536): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(538): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(538): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(540): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(540): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(542): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(542): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(544): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(544): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(546): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(546): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(548): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(548): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(550): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(550): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(552): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(552): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(554): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(554): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(556): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(556): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(558): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(558): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(560): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(560): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(562): Illegal target for signal assignment.
+# ** Error: FPALU.vwf.vht(562): (vcom-1136) Unknown identifier "istarte".
+# ** Error: FPALU.vwf.vht(565): VHDL Compiler exiting
+# End time: 15:41:18 on Oct 19,2020, Elapsed time: 0:00:00
+# Errors: 53, Warnings: 0
+# ** Error: c:/intelfpga_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+# Executing ONERROR command at macro ./FPALU.do line 4
