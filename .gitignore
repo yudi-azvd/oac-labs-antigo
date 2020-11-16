@@ -3,7 +3,6 @@
 **/*.rar
 **/Grupo8_*
 **/*.png
-**/db
 
 **/*_generation_script*
 **/*_inst.vhd
@@ -35,13 +34,12 @@
 # *.sdc # I want those timing files
 
 # ignore Quartus II generated folders
-**/db/
-**/incremental_db/
-**/simulation/
-**/timing/
+**/db
+**/incremental_db
+**/simulation
+**/timing
 **/testbench/
-**/*_sim/
+**/simulation/qsim/
 **/incremental_db/
-**/db/
-**/_output_files/
+**/output_files/
 **/PLLJ_PLLSPE_INFO.txt

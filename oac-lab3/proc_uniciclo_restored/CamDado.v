@@ -72,14 +72,14 @@ ULA ULA0 (
 
 // Unidade de controle de Branches 
 
-wire wBranch; 
-
-BranchControl BC0 (
-	.iFunct3(wFunct3),
-	.iA(wRead1),
-	.iB(wRead2),
-	.oBranch(wBranch)
-);
+//wire wBranch; 
+//
+//BranchControl BC0 (
+//	.iFunct3(wFunct3),
+//	.iA(wRead1),
+//	.iB(wRead2),
+//	.oBranch(wBranch)
+//);
 
 // multiplexadores
 
