@@ -1,5 +1,5 @@
 Analysis & Synthesis report for proc_uniciclo
-Mon Nov 16 01:53:26 2020
+Mon Nov 16 02:06:33 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,16 +14,16 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. General Register Statistics
- 10. Registers Packed Into Inferred Megafunctions
- 11. Source assignments for MemInst:MI0|altsyncram:BI_rtl_0|altsyncram_mqd1:auto_generated
- 12. Parameter Settings for User Entity Instance: BancoReg:BR0
- 13. Parameter Settings for Inferred Entity Instance: MemInst:MI0|altsyncram:BI_rtl_0
- 14. altsyncram Parameter Settings by Entity Instance
- 15. Port Connectivity Checks: "Add:ADDIMM"
- 16. Port Connectivity Checks: "Add:ADD4"
- 17. Port Connectivity Checks: "MemDados:MEMD0"
- 18. Port Connectivity Checks: "MemInst:MI0"
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Registers Packed Into Inferred Megafunctions
+ 12. Source assignments for MemInst:MI0|altsyncram:BI_rtl_0|altsyncram_mqd1:auto_generated
+ 13. Parameter Settings for User Entity Instance: BancoReg:BR0
+ 14. Parameter Settings for Inferred Entity Instance: MemInst:MI0|altsyncram:BI_rtl_0
+ 15. altsyncram Parameter Settings by Entity Instance
+ 16. Port Connectivity Checks: "Add:ADDIMM"
+ 17. Port Connectivity Checks: "Add:ADD4"
+ 18. Port Connectivity Checks: "MemDados:MEMD0"
  19. Port Connectivity Checks: "Controlador:CTRL0"
  20. Port Connectivity Checks: "ULA:ULA0"
  21. Port Connectivity Checks: "GerImm:IMMGEN0"
@@ -56,7 +56,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 16 01:53:26 2020       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 16 02:06:32 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; proc_uniciclo                               ;
 ; Top-level Entity Name           ; CamDado                                     ;
@@ -258,6 +258,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------------------------------------+
 
 
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; PC[0..31]                              ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 32 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
@@ -414,15 +424,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------+
-; Port Connectivity Checks: "MemInst:MI0"          ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; iLeInst[31..1] ; Input ; Info     ; Stuck at GND ;
-+----------------+-------+----------+--------------+
-
-
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Controlador:CTRL0"                                                                                                                                                          ;
 +------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -496,7 +497,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 16 01:53:07 2020
+    Info: Processing started: Mon Nov 16 02:06:09 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proc_uniciclo -c proc_uniciclo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -609,16 +610,6 @@ Info (10041): Inferred latch for "oDado[29]" at MemDados.v(22) File: X:/GitRepos
 Info (10041): Inferred latch for "oDado[30]" at MemDados.v(22) File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/MemDados.v Line: 22
 Info (10041): Inferred latch for "oDado[31]" at MemDados.v(22) File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/MemDados.v Line: 22
 Info (12128): Elaborating entity "Add" for hierarchy "Add:ADD4" File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/CamDado.v Line: 144
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "PC[0]" is missing source, defaulting to GND File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/CamDado.v Line: 27
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "PC[0]" is missing source, defaulting to GND File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/CamDado.v Line: 27
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "PC[0]" is missing source, defaulting to GND File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/CamDado.v Line: 27
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "PC[0]" is missing source, defaulting to GND File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/CamDado.v Line: 27
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "PC[0]" is missing source, defaulting to GND File: X:/GitRepositories/oac-labs/proc_uniciclo_restored/CamDado.v Line: 27
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "MemInst:MI0|BI_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to ROM
@@ -737,10 +728,10 @@ Info (21057): Implemented 147 device resources after synthesis - the final resou
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 1 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 113 warnings
-    Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Mon Nov 16 01:53:26 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:32
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Mon Nov 16 02:06:33 2020
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:36
 
 

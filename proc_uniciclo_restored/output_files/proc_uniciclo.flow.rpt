@@ -1,5 +1,5 @@
 Flow report for proc_uniciclo
-Mon Nov 16 01:56:07 2020
+Mon Nov 16 02:09:47 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Nov 16 01:56:07 2020       ;
+; Flow Status                     ; Successful - Mon Nov 16 02:09:47 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; proc_uniciclo                               ;
 ; Top-level Entity Name           ; CamDado                                     ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/16/2020 01:53:09 ;
+; Start date & time ; 11/16/2020 02:06:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; proc_uniciclo       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 963354562036.160550238817320           ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 963354562036.160550317004536           ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; CamDado     ; Top        ;
@@ -98,13 +98,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4800 MB             ; 00:00:31                           ;
-; Fitter               ; 00:00:53     ; 1.0                     ; 6658 MB             ; 00:01:17                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 4836 MB             ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.0                     ; 5153 MB             ; 00:00:10                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4715 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4726 MB             ; 00:00:03                           ;
-; Total                ; 00:01:38     ; --                      ; --                  ; 00:02:16                           ;
+; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4802 MB             ; 00:00:36                           ;
+; Fitter               ; 00:01:05     ; 1.0                     ; 6650 MB             ; 00:01:22                           ;
+; Assembler            ; 00:00:11     ; 1.0                     ; 4836 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:12     ; 1.1                     ; 5151 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4715 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4728 MB             ; 00:00:03                           ;
+; Total                ; 00:01:57     ; --                      ; --                  ; 00:02:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

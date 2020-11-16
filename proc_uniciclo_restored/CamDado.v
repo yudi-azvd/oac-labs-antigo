@@ -163,15 +163,21 @@ and a0 (
 
 wire pcAux;
 assign pcAux = wPC4;
-
+wire [31:0] wiPC;
+always @(*)
+begin 
+	case(escolhePC)
+		1'b0 : wiPC <= pcAux;
+		1'b1 : wiPC <= SaidaSomadorPCmaisImediato;
+	default: wiPC <= 32'b0;
+	endcase
+end
 always @(posedge iCLK or posedge iRST)
 begin
 	if (iRST)
 		PC <= 32'b0;
-	case(escolhePC)
-		1'b0 : PC <= pcAux;
-		1'b1 : PC <= SaidaSomadorPCmaisImediato;
-	endcase
+	else
+		PC <= wiPC;
 end
 	
 endmodule 
