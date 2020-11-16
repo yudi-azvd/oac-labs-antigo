@@ -5,6 +5,9 @@ module CamDado(
 	input wire iCLK, iRST,
 	input wire [31:0] iPCInicial,
 	
+	// Sinais de monitoramento
+	output [31:0] mpc,
+	
 	// sinais de controle
 	output [31:0] wInst,
 	input wCRegWrite,
@@ -15,6 +18,9 @@ module CamDado(
 	input [4:0] wCULAControl,
 	input [1:0] wCOrigBUla
 );
+
+// Monitoramento
+assign mpc = PC;
 
 // inicializando o PC
 
@@ -149,16 +155,21 @@ Add ADDIMM (
 
 wire escolhePC;
 
-AND a0 (
+and a0 (
+	escolhePC,
 	oBranch,
-	Zero,
-	escolhePC
+	Zero
 );
 
-always @(*)
+wire pcAux;
+assign pcAux = wPC4;
+
+always @(posedge iCLK or posedge iRST)
 begin
+	if (iRST)
+		PC <= 32'b0;
 	case(escolhePC)
-		1'b0 : PC <= SaidaSomadorPCmais4;
+		1'b0 : PC <= pcAux;
 		1'b1 : PC <= SaidaSomadorPCmaisImediato;
 	endcase
 end

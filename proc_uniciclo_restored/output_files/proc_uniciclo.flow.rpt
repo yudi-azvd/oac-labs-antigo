@@ -1,5 +1,5 @@
 Flow report for proc_uniciclo
-Mon Nov 16 00:24:06 2020
+Mon Nov 16 01:56:07 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Mon Nov 16 00:24:06 2020      ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; proc_uniciclo                               ;
-; Top-level Entity Name       ; CamDado                                     ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA5F31C6                                ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Mon Nov 16 01:56:07 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; proc_uniciclo                               ;
+; Top-level Entity Name           ; CamDado                                     ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 114 / 457 ( 25 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 64 / 4,065,280 ( < 1 % )                    ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -62,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/16/2020 00:23:55 ;
+; Start date & time ; 11/16/2020 01:53:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; proc_uniciclo       ;
 +-------------------+---------------------+
@@ -73,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 167304650686358.160549703506500        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 963354562036.160550238817320           ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; CamDado     ; Top        ;
@@ -93,8 +98,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4776 MB             ; 00:00:27                           ;
-; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4800 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:53     ; 1.0                     ; 6658 MB             ; 00:01:17                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4836 MB             ; 00:00:10                           ;
+; Timing Analyzer      ; 00:00:10     ; 1.0                     ; 5153 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4715 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4726 MB             ; 00:00:03                           ;
+; Total                ; 00:01:38     ; --                      ; --                  ; 00:02:16                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -103,7 +113,12 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-IOROPM4  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-FE97VTK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-FE97VTK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-FE97VTK  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-FE97VTK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-FE97VTK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-FE97VTK  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -111,6 +126,11 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off proc_uniciclo -c proc_uniciclo
+quartus_fit --read_settings_files=off --write_settings_files=off proc_uniciclo -c proc_uniciclo
+quartus_asm --read_settings_files=off --write_settings_files=off proc_uniciclo -c proc_uniciclo
+quartus_sta proc_uniciclo -c proc_uniciclo
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off proc_uniciclo -c proc_uniciclo --vector_source=X:/GitRepositories/oac-labs/proc_uniciclo_restored/Waveform.vwf --testbench_file=X:/GitRepositories/oac-labs/proc_uniciclo_restored/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=X:/GitRepositories/oac-labs/proc_uniciclo_restored/simulation/qsim/ proc_uniciclo -c proc_uniciclo
 
 
 
