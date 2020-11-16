@@ -1,0 +1,33 @@
+Quartus Prime Archive log --	D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/__proc_uniciclo.auto.qarlog
+
+Archive:	D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/__proc_uniciclo.auto.qar
+Date:		Mon Nov 16 00:30:23 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/AND.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/Add.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/BancoReg.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/CamDado.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/Controlador.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/GerImm.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/MUX.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/MemDados.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/MemInst.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/ULA.v
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/Waveform.vwf
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/Waveform1.vwf
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/db/proc_uniciclo.cbx.xml
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/db/proc_uniciclo.qpf
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/output_files/proc_uniciclo.flow.rpt
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/output_files/proc_uniciclo.map.rpt
+D:/Enzo/offline/Unb/OAC_LAMAR/lab3/oac-labs-master/oac-lab3/proc_uniciclo_restored/output_files/proc_uniciclo.map.summary
+assignment_defaults.qdf
+c5_pin_model_dump.txt
+controladorTeste.vwf
+proc_uniciclo.qsf
+proc_uniciclo.restore.rpt
+	======= Total: 22 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

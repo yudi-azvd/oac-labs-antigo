@@ -1,0 +1,166 @@
+$comment
+	File created using the following command:
+		vcd file proc_uniciclo.msim.vcd -direction
+$end
+$date
+	Sat Nov 14 00:09:42 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Controlador_vlg_vec_tst $end
+$var reg 32 ! iInst [31:0] $end
+$var wire 1 " branch [1] $end
+$var wire 1 # branch [0] $end
+$var wire 1 $ oBranch $end
+$var wire 1 % oEscMem $end
+$var wire 1 & oEscReg $end
+$var wire 1 ' oJump $end
+$var wire 1 ( oLeMem $end
+$var wire 1 ) oMemPraReg $end
+$var wire 1 * oOBULA [1] $end
+$var wire 1 + oOBULA [0] $end
+$var wire 1 , oULActrl [3] $end
+$var wire 1 - oULActrl [2] $end
+$var wire 1 . oULActrl [1] $end
+$var wire 1 / oULActrl [0] $end
+
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 iInst[7]~input_o $end
+$var wire 1 7 iInst[8]~input_o $end
+$var wire 1 8 iInst[9]~input_o $end
+$var wire 1 9 iInst[10]~input_o $end
+$var wire 1 : iInst[11]~input_o $end
+$var wire 1 ; iInst[15]~input_o $end
+$var wire 1 < iInst[16]~input_o $end
+$var wire 1 = iInst[17]~input_o $end
+$var wire 1 > iInst[18]~input_o $end
+$var wire 1 ? iInst[19]~input_o $end
+$var wire 1 @ iInst[20]~input_o $end
+$var wire 1 A iInst[21]~input_o $end
+$var wire 1 B iInst[22]~input_o $end
+$var wire 1 C iInst[23]~input_o $end
+$var wire 1 D iInst[24]~input_o $end
+$var wire 1 E ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 F iInst[6]~input_o $end
+$var wire 1 G iInst[5]~input_o $end
+$var wire 1 H iInst[4]~input_o $end
+$var wire 1 I Decoder1~0_combout $end
+$var wire 1 J iInst[1]~input_o $end
+$var wire 1 K iInst[0]~input_o $end
+$var wire 1 L iInst[2]~input_o $end
+$var wire 1 M iInst[3]~input_o $end
+$var wire 1 N Decoder1~1_combout $end
+$var wire 1 O oOBULA~0_combout $end
+$var wire 1 P Decoder1~2_combout $end
+$var wire 1 Q Decoder1~3_combout $end
+$var wire 1 R WideOr3~0_combout $end
+$var wire 1 S WideOr3~1_combout $end
+$var wire 1 T Decoder1~4_combout $end
+$var wire 1 U Decoder1~5_combout $end
+$var wire 1 V iInst[12]~input_o $end
+$var wire 1 W iInst[13]~input_o $end
+$var wire 1 X Selector1~0_combout $end
+$var wire 1 Y oOBULA~1_combout $end
+$var wire 1 Z Selector1~1_combout $end
+$var wire 1 [ iInst[26]~input_o $end
+$var wire 1 \ iInst[25]~input_o $end
+$var wire 1 ] iInst[27]~input_o $end
+$var wire 1 ^ iInst[29]~input_o $end
+$var wire 1 _ iInst[28]~input_o $end
+$var wire 1 ` iInst[31]~input_o $end
+$var wire 1 a oULActrl~0_combout $end
+$var wire 1 b iInst[14]~input_o $end
+$var wire 1 c oULActrl~1_combout $end
+$var wire 1 d oULActrl~2_combout $end
+$var wire 1 e iInst[30]~input_o $end
+$var wire 1 f oULActrl~3_combout $end
+$var wire 1 g branch~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10100101000001010110011 !
+0#
+0"
+0$
+0%
+1&
+0'
+0(
+0)
+0+
+0*
+0/
+1.
+0-
+0,
+00
+11
+x2
+13
+14
+15
+16
+07
+18
+09
+0:
+1;
+0<
+1=
+0>
+0?
+1@
+0A
+1B
+0C
+0D
+0E
+0F
+1G
+1H
+0I
+1J
+1K
+0L
+0M
+0N
+0O
+0P
+0Q
+1R
+1S
+0T
+0U
+0V
+0W
+1X
+1Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+1a
+0b
+1c
+1d
+0e
+0f
+0g
+$end
+#1000000
