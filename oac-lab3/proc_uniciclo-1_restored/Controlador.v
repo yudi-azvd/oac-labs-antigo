@@ -3,7 +3,6 @@ module Controlador(
 	input [31:0] iInst,
 	output oBranch, oLeMem, oEscMem, oMemPraReg, oEscReg, oJump,
 	output [3:0] oULActrl,
-//	output [1:0] branch,
 	output oOBULA
 );
 
@@ -17,11 +16,9 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b0;
-//		oULActrl <= 1'b0;
 		oEscReg <= 1'b1;
 		oJump <= 1'b0;
 		oOBULA <= 1'b0;
-//		branch <= 1'b0;
 		
 		case(iInst[14:12]) // func 3
 			3'b0: 
@@ -46,11 +43,10 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b0;
-		oULActrl <= 4'b1;
+		oULActrl <= 4'bx;
 		oEscReg <= 1'b1;
 		oJump <= 1'b1;
 		oOBULA <= 1'b0;
-//		branch <= 1'b0;
 	end
 	
 	7'b0100011  :    // SW
@@ -59,11 +55,10 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b1;
 		oMemPraReg <= 1'bx;
-		oULActrl <= 4'b1;
+		oULActrl <= 4'b10;
 		oEscReg <= 1'b0;
 		oJump <= 1'b0;
 		oOBULA <= 1'b01;
-//		branch <= 1'b0;
 	end
 	
 	7'b0000011  :    //LW
@@ -72,11 +67,10 @@ begin
 		oLeMem <= 1'b1;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'b1; 
-		oULActrl <= 4'b1;
+		oULActrl <= 4'b10;
 		oEscReg <= 1'b1;
 		oJump <= 1'b0;
 		oOBULA <= 1'b01; 
-//		branch <= 1'b0;
 	end
 	
 	7'b1100011 :    // BEQ
@@ -85,11 +79,10 @@ begin
 		oLeMem <= 1'b0;
 		oEscMem <= 1'b0;
 		oMemPraReg <= 1'bx;
-		oULActrl <= 4'b0;
+		oULActrl <= 4'b110;
 		oEscReg <= 1'b0;
 		oJump <= 1'b0;
 		oOBULA <= 1'b0;
-//		branch <= 1'b1;
 	end
 	
 	default:
@@ -102,7 +95,6 @@ begin
 		oEscReg <= 1'b0;
 		oJump <= 1'b0;
 		oOBULA <= 1'b0;
-//		branch <= 1'b0;
 	end
 	endcase
 end
