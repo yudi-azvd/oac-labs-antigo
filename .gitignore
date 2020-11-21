@@ -43,3 +43,7 @@
 **/incremental_db/
 **/output_files/
 **/PLLJ_PLLSPE_INFO.txt
+
+## Específico dos labs
+
+oac-lab3/out.txt
